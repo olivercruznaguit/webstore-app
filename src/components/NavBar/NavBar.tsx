@@ -20,7 +20,7 @@ const NavBar = () => {
         </div>
       </nav>
       <div className="text-center bg-black text-white py-1">
-        <span className="font-medium text-red-600">20% </span> off on first purchase
+        <span className="font-medium text-app-red">20% </span> off on first purchase
       </div>
     </div>
   );

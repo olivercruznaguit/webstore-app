@@ -1,23 +1,43 @@
-import CollectionTitle from '../CollectionTitle/CollectionTitle'
-
-import dogtag from '../../assets/dogtag.jpg'
-import bread from '../../assets/bread.jpg'
-import knuckle from '../../assets/knuckle.jpg'
-import cold from '../../assets/cold.jpg'
-import Item from '../Item/Item'
+import { useEffect, useState } from "react";
+import CollectionTitle from "../CollectionTitle/CollectionTitle";
+import { iCollection } from "../../model";
+import jsonData from "./data.json"; // Import data.json
+import Item from "../Item/Item";
 
 const Collection = () => {
+  const [isFetching, setIsFetching] = useState(true);
+  const [collections, setCollections] = useState<iCollection[]>([]);
+
+  const handleFetchItems = () => {
+
+    setTimeout(()=>{
+      setCollections(jsonData as iCollection[]);
+      setIsFetching(false)
+    },2000)
+  };
+
+  useEffect(() => {
+    console.log(collections);
+  }, [collections]);
+
+  useEffect(() => {
+    handleFetchItems();
+  }, []);
+
   return (
     <div>
-      <CollectionTitle/>
-      <div className='flex gap-2 mx-80'>
-      <Item img={dogtag} price={'₱ 750.00'} name={'Refuge Co. "DOGTAG" Tee'}/>
-      <Item img={bread} price={'₱ 750.00'} name={'Refuge Co. "BREAD" Tee'}/>
-      <Item img={knuckle} price={'₱ 750.00'} name={'Refuge Co. "BRASS KNUCKLE" Tee'}/>
-      <Item img={cold} price={'₱ 750.00'} name={'Refuge Co. "2COLD4YOU" Tee'}/>
-      </div>
+      {collections.map((collection) => (
+        <>
+          <CollectionTitle text={collection.collectionName}/>
+          <div className='flex gap-5 mx-80'>
+          {collection.items.map((item) => (
+            <Item img={item.img} price={item.price} name={item.itemName}/>
+          ))}
+          </div>
+        </>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Collection
+export default Collection;

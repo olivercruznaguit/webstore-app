@@ -1,0 +1,51 @@
+[
+    {
+        "collectionName" : "Street Thangz",
+        "collectionId": "col1",
+        "items": [
+            {
+                "itemId": "st1",
+                "img": "dogtag.jpg",
+                "price": 750,
+                "itemName": "Refuge Co. \"DOGTAG\" Tee"
+            },
+            {
+                "itemId": "st2",
+                "img": "bread.jpg",
+                "price": 750,
+                "itemName": "Refuge Co. \"BREAD\" Tee"
+            },
+            {
+                "itemId": "st3",
+                "img": "knuckle.jpg",
+                "price": 750,
+                "itemName": "Refuge Co. \"BRASS KNUCKLE\" Tee"
+            },
+            {
+                "itemId": "st4",
+                "img": "cold.jpg",
+                "price": 750,
+                "itemName": "Refuge Co. \"2COLD4YOU\" Tee"
+            }
+        ]
+    },
+    {
+        "collectionName" : "8 24 EVER",
+        "collectionId": "col2",
+        "items": [
+            {
+                "itemId": "ev1",
+                "img": "grinch.jpg",
+                "price": 700,
+                "itemName": "Refuge Co. \"GRINCH\" Mesh Short"
+            },
+            {
+                "itemId": "ev2",
+                "img": "silver.jpg",
+                "price": 700,
+                "itemName": "Refuge Co. \"Sublte Silver\" Mesh Short"
+            }
+        ]
+    }
+
+]
