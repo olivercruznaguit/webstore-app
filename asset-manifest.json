@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/webstore-app/static/css/main.9e76eacb.css",
-    "main.js": "/webstore-app/static/js/main.1884a272.js",
+    "main.css": "/webstore-app/static/css/main.ab2c36b7.css",
+    "main.js": "/webstore-app/static/js/main.73ff5624.js",
     "static/js/453.ff50db4f.chunk.js": "/webstore-app/static/js/453.ff50db4f.chunk.js",
+    "static/media/grinch.jpg": "/webstore-app/static/media/grinch.4d7b3c6f1180fdd3d8f4.jpg",
+    "static/media/silver.jpg": "/webstore-app/static/media/silver.04c0782440b0c11c8deb.jpg",
     "static/media/rfg_logo2.jpg": "/webstore-app/static/media/rfg_logo2.f64502c3aae02689b620.jpg",
+    "static/media/rfg_logo3.jpg": "/webstore-app/static/media/rfg_logo3.b78fa5d14d91aa391d8e.jpg",
     "static/media/cold.jpg": "/webstore-app/static/media/cold.bed4cdb28eb4931c1e48.jpg",
     "static/media/knuckle.jpg": "/webstore-app/static/media/knuckle.e36ecc9087fe3cfbb1a3.jpg",
     "static/media/rfg_logo.jpg": "/webstore-app/static/media/rfg_logo.fcecdb9027147c7038a4.jpg",
     "static/media/bread.jpg": "/webstore-app/static/media/bread.a642171d59a2aacd836f.jpg",
     "static/media/dogtag.jpg": "/webstore-app/static/media/dogtag.5b01cbbdf4cb6e9be3dd.jpg",
     "index.html": "/webstore-app/index.html",
-    "main.9e76eacb.css.map": "/webstore-app/static/css/main.9e76eacb.css.map",
-    "main.1884a272.js.map": "/webstore-app/static/js/main.1884a272.js.map",
+    "main.ab2c36b7.css.map": "/webstore-app/static/css/main.ab2c36b7.css.map",
+    "main.73ff5624.js.map": "/webstore-app/static/js/main.73ff5624.js.map",
     "453.ff50db4f.chunk.js.map": "/webstore-app/static/js/453.ff50db4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e76eacb.css",
-    "static/js/main.1884a272.js"
+    "static/css/main.ab2c36b7.css",
+    "static/js/main.73ff5624.js"
   ]
 }
