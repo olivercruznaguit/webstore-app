@@ -17,10 +17,6 @@ const Collection = () => {
   };
 
   useEffect(() => {
-    console.log(collections);
-  }, [collections]);
-
-  useEffect(() => {
     handleFetchItems();
   }, []);
 
