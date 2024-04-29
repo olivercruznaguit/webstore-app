@@ -1,26 +1,39 @@
+import { useState } from "react";
 import logo from "../../assets/rfg_logo.jpg";
 import { BiShoppingBag } from "react-icons/bi";
+import { RiMenu4Line } from "react-icons/ri";
+
 const NavBar = () => {
+  const [burgerVisibility, setBurgerVisibility] = useState(false);
+
+  const toggleVisibility = () => {
+    const menuElement = document.getElementById("menu");
+    if (menuElement) {
+      menuElement.classList.toggle("menu-visible");
+    }
+    setBurgerVisibility(!burgerVisibility)
+  }
+
   return (
-    <div 
-    // className="fixed top-0 left-0 w-full"
-    >
-      <nav className="flex justify-between items-center px-80 py-5">
+    <div>
+      <nav id="menu" className="sideNav flex justify-between items-center px-40 py-5 xl:px-80 ease-in duration-300">
         <img src={logo} alt="refuge logo" className="w-20 h-10 rounded-xl" />
         <ul className="flex gap-14 cursor-pointer text-sm items-center">
           <li>Home</li>
           <li>Shop</li>
           <li>Size Chart</li>
-          <li >
-            Contact Us
-          </li>
+          <li>Contact Us</li>
         </ul>
         <div>
-        <BiShoppingBag className="text-black w-6 h-6 cursor-pointer" />
+          <BiShoppingBag className="bag text-black w-6 h-6 cursor-pointer" />
         </div>
       </nav>
-      <div className="text-center bg-black text-white py-1">
-        <span className="font-medium text-app-red">20% </span> off on first purchase
+      <div className="announcement text-center bg-black text-white py-2">
+        <span className="font-medium text-app-red">20% </span> off on first
+        purchase
+      </div>
+      <div className="menuButton">
+        <RiMenu4Line className="bugerIcon fixed top-0 right-0 z-30 text-white mt-3 mr-10 w-10 h-10 bg-red-500" onClick={toggleVisibility}/>
       </div>
     </div>
   );

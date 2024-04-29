@@ -52,8 +52,8 @@ const ContactUs = () => {
   };
   return (
     <div>
-      <div className="flex flex-row items-center justify-center gap-20 py-20">
-        <div className="flex flex-col w-1/4 gap-5">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-20 py-10">
+        <div className="flex flex-col w-1/2 lg:w-1/4 gap-5">
           <img src={logo3} alt="" className="w-32 h-32" />
           <div className="text-2xl font-medium">
             Send us a message
@@ -80,7 +80,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <form className="flex flex-col gap-5 w-1/3" onSubmit={onSubmit}>
+        <form className="flex flex-col gap-5 w-1/2 lg:w-1/4" onSubmit={onSubmit}>
           <label className="mt-5">
             <div>Your Name</div>
             <input
@@ -116,7 +116,7 @@ const ContactUs = () => {
               required
             />
           </label>
-          <button type="submit" className="py-3 px-10 bg-black text-white">
+          <button type="submit" className="py-3 px-10 bg-app-blue text-white">
             Submit Form
           </button>
           {result !== "" ? (<div>{result} <FaCheck className="w-5 h-5 text-app-blue inline-block ml-3"/></div>) : <></>}

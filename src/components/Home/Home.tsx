@@ -24,7 +24,7 @@ const Home = () => {
       <div
         onMouseEnter={handleHoverIn}
         onMouseLeave={handleHoverOut}
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white py-4 px-8 cursor-pointer"
+        className="shopNowBtn absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white py-2 px-7 xl:py-4 xl:px-8 cursor-pointer"
       >
         Shop Now! <FaArrowRightLong className="ml-2 inline-block w-5 h-5"/>
       </div>

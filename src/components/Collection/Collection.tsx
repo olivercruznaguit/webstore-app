@@ -21,11 +21,11 @@ const Collection = () => {
   }, []);
 
   return (
-    <div>
+    <div className="md:px-16 lg:px-20 xl:px-80">
       {collections.map((collection) => (
         <>
           <CollectionTitle text={collection.collectionName}/>
-          <div className='flex gap-5 mx-80'>
+          <div className='flex flex-col md:flex-row gap-5 flex-wrap'>
           {collection.items.map((item) => (
             <Item img={item.img} price={item.price} name={item.itemName}/>
           ))}

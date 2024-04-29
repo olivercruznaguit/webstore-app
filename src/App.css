@@ -8,3 +8,69 @@ input, textarea {
     color: white;
     padding: 20px;
 }
+
+.menuButton {
+    visibility: hidden;
+}
+
+
+/* -----------media-query------------ */
+
+@media screen and (max-width: 992px) {
+    .sideNav {
+        position: fixed;
+        right: -60%;
+        top: 0;
+        background: #000;
+        width: 60%;
+        flex-direction: column;
+        height: 100%;
+        z-index: 10;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        gap: 10%;
+        transition: right ease-in 0.3s;
+    }
+
+    .menu-visible {
+        right: 0;
+    }
+
+    .menuButton {
+        visibility: visible;
+    }
+
+    .sideNav ul {
+        flex-direction: column;
+    }
+
+    .sideNav div {
+        color: white;
+    }
+
+    .announcement {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bag{
+        color: white;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .shopNowBtn {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bugerIcon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
