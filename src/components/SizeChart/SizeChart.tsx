@@ -1,8 +1,10 @@
 import React from "react";
+import { Element } from "react-scroll";
 
 const SizeChart = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center py-20 gap-20 bg-black">
+   <Element name="sizeChart">
+     <div className="flex flex-col lg:flex-row items-center justify-center py-20 gap-20 bg-black">
         <div className="text-red-100 text-4xl hover:text-5xl ease-in duration-300 cursor-default shrink-0">
             REFUGE CO.
         </div>
@@ -17,6 +19,7 @@ const SizeChart = () => {
             alt=""
         />
     </div>
+   </Element>
   );
 };
 

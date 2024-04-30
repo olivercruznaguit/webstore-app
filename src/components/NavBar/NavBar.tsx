@@ -2,6 +2,8 @@ import { useState } from "react";
 import logo from "../../assets/rfg_logo.jpg";
 import { BiShoppingBag } from "react-icons/bi";
 import { RiMenu4Line } from "react-icons/ri";
+import { Link } from 'react-scroll';
+
 
 const NavBar = () => {
   const [burgerVisibility, setBurgerVisibility] = useState(false);
@@ -19,10 +21,10 @@ const NavBar = () => {
       <nav id="menu" className="sideNav flex justify-between items-center px-40 py-5 xl:px-80 ease-in duration-300">
         <img src={logo} alt="refuge logo" className="w-20 h-10 rounded-xl" />
         <ul className="flex gap-14 cursor-pointer text-sm items-center">
-          <li>Home</li>
-          <li>Shop</li>
-          <li>Size Chart</li>
-          <li>Contact Us</li>
+          <li><Link activeClass="active" to="home" spy={true} smooth={true} duration={500} >Home</Link></li>
+          <li><Link activeClass="active" to="shop" spy={true} smooth={true} duration={500} offset={-200} >Shop</Link></li>
+          <li><Link activeClass="active" to="sizeChart" spy={true} smooth={true} duration={500} offset={-200}>Size Chart</Link></li>
+          <li><Link activeClass="active" to="contactUs" spy={true} smooth={true} duration={500} offset={-200} >Contact Us</Link></li>
         </ul>
         <div>
           <BiShoppingBag className="bag text-black w-6 h-6 cursor-pointer" />

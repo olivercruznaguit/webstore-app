@@ -8,6 +8,7 @@ import Subtitle from "./components/Subtitle/Subtitle";
 import Collection from "./components/Collection/Collection";
 import SizeChart from "./components/SizeChart/SizeChart";
 import ContactUs from "./components/ContactUs/ContactUs";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <SizeChart/>
       <Title title={"Contact Us"} children={undefined}/>
       <ContactUs/>
+      <Footer/>
     </div>
   );
 }
